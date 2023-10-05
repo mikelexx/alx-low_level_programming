@@ -2,7 +2,7 @@
 /**
  * main -entry point to program.
  * Description - prints types of various data.
- * Return - 0 always to dindicate success
+ * Return - 0 always to dindicate success.
  */
 int main(void)
 {
