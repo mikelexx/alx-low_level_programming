@@ -1,2 +1,2 @@
 #!/bin/bash
-touch ${CFILE%.c}.o | gcc -S $CFILE
+touch ${CFILE%.c}.o | gcc -S -o $CFILE
