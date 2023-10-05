@@ -1,4 +1,4 @@
-# include <stdio.h>
+# inclue <stdio.h>
 /**
  * main -entry point to program.
  * Description - prints types of various data.
@@ -11,10 +11,10 @@ long int b;
 long long int c;
 float d;
 char e;
-printf("Size of a char: %d byte(s)", sizeof(e));
-printf("Size of an int: %d byte(s)", sizeof(a));
-printf("Size of a long int: %d byte byte(s)", sizeof(b));
-printf("Size of a long long int: %d byte(s)", sizeof(c));
-printf("Size of a float: %d byte(s)", sizeof(d));
+printf("Size of a char: %u byte(s)", sizeof(e));
+printf("Size of an int: %u byte(s)", sizeof(a));
+printf("Size of a long int: %u byte byte(s)", sizeof(b));
+printf("Size of a long long int: %u byte(s)", sizeof(c));
+printf("Size of a float: %u byte(s)", sizeof(d));
 return (0);
 }
