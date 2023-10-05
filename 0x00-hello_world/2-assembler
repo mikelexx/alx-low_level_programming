@@ -1,0 +1,2 @@
+#!/bin/bash
+touch ${CFILE%.c}.o | gcc -S $CFILE
