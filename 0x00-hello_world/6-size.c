@@ -1,4 +1,4 @@
-# inclue <stdio.h>
+# include <stdio.h>
 /**
  * main -entry point to program.
  * Description - prints types of various data.
