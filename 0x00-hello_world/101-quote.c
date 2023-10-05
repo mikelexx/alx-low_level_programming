@@ -1,4 +1,5 @@
 #include <unistd.h>
+#include <stdio.h>
 /**
  * main - entry point.
  * Description - print error message without using puts or printf their man 3.
