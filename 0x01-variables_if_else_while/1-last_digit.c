@@ -9,9 +9,11 @@
 int mai(void)
 {
 	int n;
+	int last;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	printf("Last digit of %d is %d", n, n % 10);
+	last = n % 10;
+	printf("Last digit of %d is %d", n, last);
 	return (0);
 }
