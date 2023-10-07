@@ -12,11 +12,11 @@ int main(void)
 	
 	while (i < 56)
 	{
-		j = i;
-		while ( j < 56)
+		j = i + 1;
+		while ( j < 57)
 		{
-			k = j;
-			while (k < 56)
+			k = j + 1;
+			while (k < 57)
 			{
 				putchar(i);
 				putchar(j);
