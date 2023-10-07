@@ -6,8 +6,8 @@
  */
 int main(void)
 {
-	int num  = 0;
-	while (num < 8)
+	int num  = 48;
+	while (num < 56)
 	{
 		putchar(num);
 		putchar(44);
