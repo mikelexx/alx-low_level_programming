@@ -1,16 +1,17 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <time.h>
-/**main - entry point.
+/**
+ * main - entry point.
  * Decription - Assigns random number to variable n each time its executed.
- * Return  -0 for sucess
+ * Return  -0 for sucess.
  */
 int main(void)
 {
 	int n;
+
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-
 	if (n > 0)
 	{
 		printf("%d is positive", n);
