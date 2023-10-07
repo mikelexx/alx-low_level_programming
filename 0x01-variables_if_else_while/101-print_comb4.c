@@ -16,12 +16,12 @@ int main(void)
 		while (j < 57)
 		{
 			k = 48;
-			while (k <= 57)
+			while (k < 57)
 			{
 				putchar(i);
 				putchar(j);
 				putchar(k);
-				if (k != 7)
+				if (j != 7)
 				{
 					putchar(44);
 					putchar(32);
