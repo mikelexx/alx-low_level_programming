@@ -4,7 +4,7 @@
 /**
  * main - entry point.
  * Decription - Assigns random number to variable n each time its executed.
- * Return  -0 for sucess.
+ * Return: 0 for sucess.
  */
 int main(void)
 {
