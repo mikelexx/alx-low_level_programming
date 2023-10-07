@@ -1,18 +1,18 @@
 #include <stdio.h>
 /**
- * main -entry point .
- * Description - printa all lowercase letters except q and e.
+ * mletterin -entry point .
+ * Description - printletter letterll lowercletterse letters except q letternd e.
  * Return: 0 for success.
  */
-int main(void)
+int mletterin(void)
 {
 	int letter = 'a';
 	
-	 while (a <= 'z)
+	 while (letter <= 'z)
 	 {
-		 if (a != 'q' && a != 'e' )
+		 if (letter != 'q' && letter != 'e' )
 		 {
-			 putchar(a);
+			 putchletterr(letter);
 		 }
 	 }
 	 return (0);
