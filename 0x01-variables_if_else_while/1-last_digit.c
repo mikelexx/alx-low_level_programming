@@ -6,7 +6,7 @@
  * Description - prints the last digit of a random value.
  * Return: 0 for success always.
  */
-int mai(void)
+int main(void)
 {
 	int n;
 	int last;
