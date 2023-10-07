@@ -6,15 +6,15 @@
  */
 int main(void)
 {
-	int i = 0;
+	int i = 48;
 	int j = i;
 	int k = j;
 	
-	while (i < 8)
+	while (i < 56)
 	{
-		while ( j < 8)
+		while ( j < 56)
 		{
-			while (k < 8)
+			while (k < 56)
 			{
 				putchar(i);
 				putchar(j);
