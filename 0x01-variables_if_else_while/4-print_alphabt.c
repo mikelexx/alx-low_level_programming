@@ -4,17 +4,16 @@
  * Description - printletter letterll lowercletterse letters except q letternd e.
  * Return: 0 for success.
  */
-int mletterin(void)
+int main(void)
 {
 	int letter = 'a';
 	
-	 while (letter <= 'z)
+	 while (letter <= 'z')
 	 {
-		 if (letter != 'q' && letter != 'e' )
+		 if (letter != 'q' && letter != 'e')
 		 {
 			 putchletterr(letter);
 		 }
 	 }
 	 return (0);
 }
-
