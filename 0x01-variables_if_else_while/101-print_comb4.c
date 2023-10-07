@@ -6,24 +6,30 @@
  */
 int main(void)
 {
-	for (int i = 0; i < 8; i++;)
+	int i = 0;
+	int j = i;
+	int k = j;
+	
+	while (i < 8)
 	{
-		for (int j = i+1; j < 8; j++;)
+		while ( j < 8)
 		{
-			for (int k = j+1; k < 8; j++;)
+			while (k < 8)
 			{
-				putchar(i + 48);
-				putchar(j + 48);
-				putchar(k + 48);
-				if (i != 7)
+				putchar(i);
+				putchar(j);
+				putchar(k);
+				if (k != 7)
 				{
 					putchar(44);
 					putchar(32);
 				}
+				k++;
 			}
+			j++;
 		}
+		i++;
 	}
 	putchar('\n');
 	return (0);
 }
-
