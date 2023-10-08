@@ -1,21 +1,26 @@
 # include <stdio.h>
 /** main -entry point.
  * Description - print all combination s of two numbers.
- * Return: 0 for sucess
+ * Return: 0 for sucess.
  */
 int main(void)
 {
-	int i = 48;
-	int j  = 48;
+	int i = 0;
+	int j  = 0;
 
-	while (i <= 57)
+	while (i < 100)
 	{
-		j  = 48;
-		while (j <= 57)
+		j  = 0;
+		while (j <= 100)
 		{
-			putchar(i);
-			putchar(j);
-			if (i !=57 && j != 57)
+			if(i < j)
+			{
+				putchar((i / 10) + 48);
+				putchar((i % 10) + 48);
+				putchar('');
+				putchar((j / 10) + 48);
+				putchar((j % 10) + 48);
+			if (i != 98 || j != 99)
 			{
 				putchar(48);
 				putchar(32);
