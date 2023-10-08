@@ -11,7 +11,7 @@ int main(void)
 	while (i < 100)
 	{
 		j  = 0;
-		while (j <= 100)
+		while (j < 00)
 		{
 			if(i < j)
 			{
