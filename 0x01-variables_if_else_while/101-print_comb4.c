@@ -7,24 +7,27 @@
 int main(void)
 {
 	int i = 48;
-	int j = i;
-	int k = j;
-	
-	while (i < 56)
+	int j = 49;
+	int k = 50;
+
+	while (i < 58)
 	{
-		j = i + 1;
-		while (j < 57)
+		j = 49;
+		while (j < 58)
 		{
-			k = 48;
-			while (k < 57)
+			k = 50;
+			while (k < 58)
 			{
-				putchar(i);
-				putchar(j);
-				putchar(k);
-				if (j != 7)
+				if (k > j && j > n)
 				{
-					putchar(44);
-					putchar(32);
+					putchar(i);
+					putchar(j);
+					putchar(k);
+					if (i != 55 || j !=56)
+					{
+						putchar(44);
+						putchar(32);
+					}
 				}
 				k++;
 			}
