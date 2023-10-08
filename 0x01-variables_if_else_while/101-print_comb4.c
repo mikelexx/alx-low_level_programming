@@ -18,7 +18,7 @@ int main(void)
 			k = 50;
 			while (k < 58)
 			{
-				if (k > j && j > m)
+				if (k > j && j > i)
 				{
 					putchar(i);
 					putchar(j);
