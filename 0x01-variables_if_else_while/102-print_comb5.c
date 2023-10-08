@@ -20,11 +20,12 @@ int main(void)
 				putchar(32);
 				putchar((j / 10) + 48);
 				putchar((j % 10) + 48);
-			}
-			if (i != 98 || j != 99)
-			{
-				putchar(48);
-				putchar(32);
+			
+				if (i != 98 || j != 99)
+				{
+					putchar(48);
+					putchar(32);
+				}
 			}
 			j++;
 		}
