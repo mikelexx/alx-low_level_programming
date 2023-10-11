@@ -2,7 +2,7 @@
 int _abs(int n);
 /**
  * _abs - computes the absolute of an integer.
- * @n - number to be checked.
+ * @n:  number to be checked.
  *
  * Return: @n;
  */
@@ -13,7 +13,7 @@ int _abs(int n)
 		int  answ;
 
 		answ = 0 - n;
-		return answ;
+		return (answ);
 	}
-	return n;
+	return (n);
 }
