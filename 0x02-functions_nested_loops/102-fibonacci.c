@@ -10,13 +10,13 @@ int main(void)
 	long int curr = 2;
 	int i = 0;
 	
-	printf("%l, %l, ", prev, curr);
+	printf("%ld, %ld, ", prev, curr);
 	while (i <=48)
 	{
 		int temp = curr;
 		curr = curr + prev;
 		prev = temp;
-		printf("%l, ", curr);
+		printf("%ld, ", curr);
 		i++;
 	}
 	return (0);
