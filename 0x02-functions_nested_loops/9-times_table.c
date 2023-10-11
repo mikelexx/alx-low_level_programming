@@ -11,28 +11,18 @@ void times_table(void)
 	while (row < 10)
 	{
 		printf("0, ");
-		col = row;
-		while (col < (row * 9))
+		col = 0;
+		while (col < 10)
 		{	
-			if(row == 1)
-			{
-				int x = 0;
-				while (x < 10)
-				{
-					printf("%d,  ", 0);
-					x++;
-				}
-				printf("\n");
-			}
 			if (col < 10)
 			{
-				printf("%d,  ", col);
+				printf("%d,  ", col+row);
 			}
 			else
 			{
 				printf("%d, ", col);
 			}
-			col +=row;
+			col ++;
 		}
 		printf("%d\n", col);
 		row ++;
