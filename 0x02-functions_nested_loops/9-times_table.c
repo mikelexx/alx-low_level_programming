@@ -13,17 +13,22 @@ void times_table(void)
 		col = 0;
 		while (col < 9)
 		{	
-			if ((col * row) < 10)
+			if (col == 0)
 			{
-				printf("%d,  ", col * row);
+				printf("%d,", 0);
+			}
+
+			else if  ((col * row) < 10)
+			{
+				printf("  %d,", col * row);
 			}
 			else
 			{
-				printf("%d, ", col * row);
+				printf(" %d,", col * row);
 			}
 			col ++;
 		}
-		printf("%d\n", col);
+		printf("%d\n", col* row);
 		row ++;
 		
 	
