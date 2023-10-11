@@ -1,18 +1,24 @@
 #include <stdio.h>
 void print_times_table(int n);
 /**
- * times_table - prints the 9 times table starting with 0.
+ * print_times_table - prints the 9 times table starting with 0.
  * @n: number of rows and columns to be created.
  */
 void print_times_table(int n)
 {
 	int row = 0;
 	int col = 0;
+
 	if (n > 15 || n < 0)
 	{
 		return;
 	}
-	while (row < n+1)
+	if (n == 0)
+	{
+		print("0\n");
+		return;
+	}
+	while (row < n + 1)
 	{
 		col = 0;
 		while (col < n)
