@@ -5,7 +5,7 @@ void times_table(void);
  */
 void times_table(void)
 {
-	int row = 1;
+	int row = 0;
 	int col = 0;
 	
 	while (row < 10)
@@ -13,13 +13,13 @@ void times_table(void)
 		col = 0;
 		while (col < 9)
 		{	
-			if (col < 8)
+			if ((col * row) < 10)
 			{
 				printf("%d,  ", col * row);
 			}
 			else
 			{
-				printf("%d, ", col);
+				printf("%d, ", col * row);
 			}
 			col ++;
 		}
