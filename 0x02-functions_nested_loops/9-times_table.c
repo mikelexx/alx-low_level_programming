@@ -12,11 +12,11 @@ void times_table(void)
 	{
 		printf("0, ");
 		col = 0;
-		while (col < 10)
+		while (col < 9)
 		{	
-			if (col < 10)
+			if (col < 8)
 			{
-				printf("%d,  ", col+row);
+				printf("%d,  ", col * row);
 			}
 			else
 			{
