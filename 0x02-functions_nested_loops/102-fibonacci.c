@@ -6,17 +6,17 @@
  */
 int main(void)
 {
-	int prev = 1;
-	int curr = 2;
+	long int prev = 1;
+	long int curr = 2;
 	int i = 0;
 	
-	printf("%d, %d, ", prev, curr);
+	printf("%l, %l, ", prev, curr);
 	while (i <=48)
 	{
 		int temp = curr;
 		curr = curr + prev;
 		prev = temp;
-		printf("%d, ", curr);
+		printf("%l, ", curr);
 		i++;
 	}
 	return (0);
