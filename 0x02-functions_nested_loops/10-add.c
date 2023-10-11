@@ -1,5 +1,5 @@
 #include "main.h"
-void add(int, int);
+int add(int, int);
 /**
  * add - adds two numbers and returns the result.
  * @a: first number.
