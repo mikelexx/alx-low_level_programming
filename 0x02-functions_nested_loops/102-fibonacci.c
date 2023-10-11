@@ -8,7 +8,7 @@ int main(void)
 {
 	int prev = 1;
 	int curr = 2;
-	int i = 0
+	int i = 0;
 	
 	printf("%d, %d, ", prev, curr);
 	while (i <=48)
