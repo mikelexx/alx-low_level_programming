@@ -10,6 +10,7 @@ void print_alphabet_x10(void)
 
 	while (row < 10)
 	{
+		letter = 'a'
 		while (letter <= 'z')
 		{
 			putchar(letter);
