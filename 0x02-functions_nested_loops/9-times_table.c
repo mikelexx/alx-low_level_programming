@@ -11,7 +11,7 @@ void times_table(void)
 	{
 		int pcolumn = 0;
 		int column = 0;
-		int fcol = pcolumn + row;
+		int lcol = pcolumn + row;
 
 		while (column < 9)
 		{
@@ -21,7 +21,8 @@ void times_table(void)
 			_putchar(32);
 			column++;
 		}
-	       	_putchar(fcol);
+	       	_putchar(lcol);
+		_putchar('\n');
        		row++;
 	}
 }	
