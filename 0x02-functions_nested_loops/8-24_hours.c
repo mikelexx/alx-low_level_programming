@@ -19,7 +19,7 @@ void jack_bauer(void)
 			int fmin = (min / 10) + 48;
 			int lhour = (hour % 10) + 48;
 			int lmin = (min % 10) + 48;
-			
+
 			_putchar(fhour);
 			_putchar(lhour);
 			_putchar(58);
