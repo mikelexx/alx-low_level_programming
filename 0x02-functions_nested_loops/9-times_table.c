@@ -7,12 +7,12 @@ void times_table(void)
 {
 	int row = 0;
 	int col = 0;
-	
+
 	while (row < 10)
 	{
 		col = 0;
 		while (col < 9)
-		{	
+		{
 			if (col == 0)
 			{
 				printf("%d,", 0);
@@ -28,7 +28,7 @@ void times_table(void)
 			}
 			col++;
 		}
-		if ((col*row) < 10)
+		if ((col * row) < 10)
 		{
 			printf("  %d\n", col * row);
 		}
