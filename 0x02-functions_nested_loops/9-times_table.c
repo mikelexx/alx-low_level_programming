@@ -5,9 +5,9 @@ void times_table(void);
  */
 void times_table(void)
 {
-	int row = 0;
+	int row = 1;
 	int col = 0;
-	while (col < 9)
+	while (col < 8)
 	{
 		printf("0, ");
 		col++;
