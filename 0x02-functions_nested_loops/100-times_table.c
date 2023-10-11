@@ -6,13 +6,12 @@ void print_times_table(int n);
  */
 void print_times_table(int n)
 {
+	int row = 0;
+	int col = 0;
 	if (n > 15 || n < 0)
 	{
 		return;
 	}
-	int row = 0;
-	int col = 0;
-
 	while (row < n+1)
 	{
 		col = 0;
@@ -43,7 +42,7 @@ void print_times_table(int n)
 		}
 		else if ((col * row) < 100)
 		{
-			print("  %d\n", col * row);
+			printf("  %d\n", col * row);
 		}
 		else
 		{
