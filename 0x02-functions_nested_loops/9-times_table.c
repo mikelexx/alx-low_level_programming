@@ -9,7 +9,7 @@ void times_table(void)
 	int col = 0;
 	while (col < 11)
 	{
-		printf("0, ");
+		printf("0,  ");
 		col++;
 	}
 	printf("0\n");
