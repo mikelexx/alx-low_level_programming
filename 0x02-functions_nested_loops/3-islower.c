@@ -1,8 +1,10 @@
 #include <stdio.h>
 int _islower(int c);
 /**
- * _islower - checks for lower case character
- * Return: 1 if character is lower otherwise 0
+ * _islower - checks for lower case character.
+ * @c - number to be checked.
+ *
+ * Return: 1 if character is lower otherwise 0.
  */
 int _islower(int c)
 {
