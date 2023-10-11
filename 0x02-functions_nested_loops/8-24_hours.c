@@ -8,15 +8,17 @@ void jack_bauer(void)
 	int hour;
 	int min;
 
-	while (hour <24)
+	while (hour < 24)
 	{
+		min = 0;
 		while (min < 60)
 		{
 			int fhour = (hour / 10) + 48;
 			int fmin = (min / 10) + 48;
 			int lhour = (hour % 10) + 48;
 			int lmin = (min % 10) + 48;
-			putcha(fhour);
+			
+			putchar(fhour);
 			putchar(lhour);
 			putchar(59);
 			putchar(fmin);
@@ -26,3 +28,4 @@ void jack_bauer(void)
 		}
 		hour++;
 	}
+}
