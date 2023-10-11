@@ -6,21 +6,9 @@ int _islower(int c);
  */
 int _islower(int c)
 {
-	if ( 97 <= c <= 122)
+	if ( 97 <= c && c <= 122)
 	{
 		return 1;
 	}
 	return 0;
-}
-/**
- * main - entry point.
- *
- * Return: 0 for sucess.
- */
-int main(void)
-{
-	int r;
-
-	r = _islower('H');
-	return (0);
 }
