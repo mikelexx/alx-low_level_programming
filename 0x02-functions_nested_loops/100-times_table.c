@@ -15,7 +15,7 @@ void print_times_table(int n)
 	}
 	if (n == 0)
 	{
-		print("0\n");
+		printf("0\n");
 		return;
 	}
 	while (row < n + 1)
