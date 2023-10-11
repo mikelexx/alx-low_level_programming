@@ -9,13 +9,13 @@ void times_table(void)
 	
 	while (row < 10)
 	{
-		int pcolumn = 0;
+		int pcolumn = 48;
 		int column = 0;
 		int lcol = pcolumn + row;
 
 		while (column < 9)
 		{
-			pcolumn = column + row + 48;
+			pcolumn += (pcolumn + row);
 			_putchar(pcolumn);
 			_putchar(44);
 			_putchar(32);
