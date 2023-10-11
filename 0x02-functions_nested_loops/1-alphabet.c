@@ -12,15 +12,3 @@ void print_alphabet(void)
 		putchar(start);
 		start++;
 	}
-	putchar('\n');
-}
-/**
- * main -entry point.
- * Description - calls the print alphabet function.
- * Return: 0 for success.
- */
-int main(void)
-{
-	print_alphabet();
-	return (0);
-}
