@@ -14,7 +14,6 @@ void times_table(void)
 		col = row;
 		while (col < (row * 9))
 		{
-			if (col == row x9
 			printf("%d, ",col);
 			col +=row;
 		}
