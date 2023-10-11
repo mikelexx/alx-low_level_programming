@@ -22,7 +22,7 @@ void times_table(void)
 					printf("%d,  ", 0);
 					x++;
 				}
-				print("\n");
+				printf("\n");
 			}
 			if (col < 10)
 			{
