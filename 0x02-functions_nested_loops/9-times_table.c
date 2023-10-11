@@ -11,7 +11,7 @@ void times_table(void)
 	{
 		printf("0, ");
 	}
-	print("\n");
+	printf("\n");
 	while (row < 10)
 	{
 		printf("0, ");
