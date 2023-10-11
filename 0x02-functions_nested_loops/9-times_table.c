@@ -8,7 +8,7 @@ void times_table(void)
 	int row = 1;
 	int col = 0;
 	
-	printf("0, 0, 0, 0, 0, 0, 0, 0, 0, 0\n");	
+	printf("0,  0,  0,  0,  0,  0,  0,  0,  0,  0\n");
 	while (row < 10)
 	{
 		printf("0, ");
