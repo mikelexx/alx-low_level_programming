@@ -18,6 +18,6 @@ int print_sign(int n)
 		printf("0");
 		return (0);
 	}
-	print("-1");
+	printf("-1");
 	return (-1);
 }
