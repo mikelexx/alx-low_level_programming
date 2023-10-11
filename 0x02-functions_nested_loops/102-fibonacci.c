@@ -6,8 +6,8 @@
  */
 int main(void)
 {
-	long int prev = 1;
-	long int curr = 2;
+	long  long int prev = 1;
+	long long  int curr = 2;
 	int i = 0;
 	
 	printf("%lld, %lld, ", prev, curr);
