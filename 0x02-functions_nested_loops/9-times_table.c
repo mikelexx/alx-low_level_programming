@@ -7,7 +7,7 @@ void times_table(void)
 {
 	int row = 1;
 	int col = 0;
-	while (col < 10)
+	while (col < 11)
 	{
 		printf("0, ");
 		col++;
