@@ -10,6 +10,7 @@ void times_table(void)
 	while (col < 9)
 	{
 		printf("0, ");
+		col++;
 	}
 	printf("\n");
 	while (row < 10)
