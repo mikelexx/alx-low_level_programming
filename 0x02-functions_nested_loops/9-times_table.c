@@ -26,18 +26,16 @@ void times_table(void)
 			{
 				printf(" %d,", col * row);
 			}
-			col ++;
+			col++;
 		}
 		if ((col*row) < 10)
 		{
-			printf("  %d\n", col* row);
+			printf("  %d\n", col * row);
 		}
 		else
 		{
-			printf(" %d\n", col*row);
+			printf(" %d\n", col * row);
 		}
-		row ++;
-		
-	
+		row++;
 	}
 }
