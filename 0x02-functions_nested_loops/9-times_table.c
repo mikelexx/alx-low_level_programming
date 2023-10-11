@@ -8,13 +8,22 @@ void times_table(void)
 	int row = 1;
 	int col = 0;
 	
-	printf("0,  0,  0,  0,  0,   0,   0,   0, 0, 0\n");
 	while (row < 10)
 	{
 		printf("0, ");
 		col = row;
 		while (col < (row * 9))
-		{
+		{	
+			if(row == 1)
+			{
+				int x = 0;
+				while (x < 10)
+				{
+					print("%d,  ", 0);
+					x++;
+				}
+				print("\n");
+			}
 			if (col < 10)
 			{
 				printf("%d,  ", col);
