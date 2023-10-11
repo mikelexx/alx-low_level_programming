@@ -19,7 +19,7 @@ void times_table(void)
 				int x = 0;
 				while (x < 10)
 				{
-					print("%d,  ", 0);
+					printf("%d,  ", 0);
 					x++;
 				}
 				print("\n");
