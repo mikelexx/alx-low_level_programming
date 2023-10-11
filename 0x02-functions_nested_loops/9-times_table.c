@@ -28,7 +28,14 @@ void times_table(void)
 			}
 			col ++;
 		}
-		printf("%d\n", col* row);
+		if ((col*row) < 10)
+		{
+			printf("  %d\n", col* row);
+		}
+		else
+		{
+			print(" %d\n", col*row);
+		}
 		row ++;
 		
 	
