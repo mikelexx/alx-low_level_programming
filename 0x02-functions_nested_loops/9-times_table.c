@@ -34,7 +34,7 @@ void times_table(void)
 		}
 		else
 		{
-			print(" %d\n", col*row);
+			printf(" %d\n", col*row);
 		}
 		row ++;
 		
