@@ -6,9 +6,15 @@
  */
 int _isdigit(int c)
 {
-	if (c >=0 && c < 10)
+	int curr = 0;
+
+	while (curr < 10)
 	{
-		return (1);
+		if (c == curr)
+		{
+			return (1);
+		}
+		curr++;
 	}
 	if (c >=48 && c <= 57)
 	{
