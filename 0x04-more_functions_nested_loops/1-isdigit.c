@@ -9,7 +9,7 @@ int _digit(int c)
 	int curr = 0;
 	
 	while (curr < 10)
-	{
+	
 		if (c == curr)
 		{
 			return (1);
