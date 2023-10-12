@@ -5,24 +5,28 @@
 void more_numbers(void)
 {
 	int row = 0;
-	int col = 0;
-	int counter = 48;
+	int col;
+	int counter;
+
 	while (row < 10)
 	{
+		col = 0;
+		counter = 48;
 		while (col < 15)
 		{
 			if (col == 10)
 			{
-				counter = 0;
+				counter = 48;
 			}
-			if (col > 8)
+			if (col > 9)
 			{
 				_putchar(49);
 			}
 			_putchar(counter);
+			counter+=1;
 			col++;
-			counter++;
 		}
 		_putchar(10);
+		row++;
 	}
 }
