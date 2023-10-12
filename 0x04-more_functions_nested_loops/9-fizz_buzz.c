@@ -3,10 +3,10 @@
  * main - performs fizz-buzz-test.
  * Return: 0 always.
  */
-void main(void)
+int main(void)
 {
 	int num = 2;
-	printf(" %d",1);
+	printf("%d",1);
 	while (num < 101)
 	{
 		if ((num % 3) == 0 && (num % 5) == 0)
@@ -27,4 +27,6 @@ void main(void)
 		}
 		num++;
 	}
+	putchar(10);
+	return (0);
 }
