@@ -20,8 +20,9 @@ void print_triangle(int size)
 			{
 				_putchar(35);
 				col++;
+			}
 		}
-		_putchar('\n);
+		_putchar('\n');
 		row++;
 	}
 }
