@@ -12,8 +12,16 @@ void print_triangle(int size)
 		col = 1;
 		while (col <= row)
 		{
-			_putchar(35);
+			if(col <= row - col)
+			{
+				_putchar(32);
+			}
+			else 
+			{
+				_putchar(35);
+				col++;
 		}
-		_putchar(32);
+		_putchar('\n);
+		row++;
 	}
 }
