@@ -4,9 +4,9 @@
  */
 void more_numbers(void)
 {
-	int row = 0;
 	int col;
 	int counter;
+	int row = 0;
 
 	while (row < 10)
 	{
@@ -23,7 +23,7 @@ void more_numbers(void)
 				_putchar(49);
 			}
 			_putchar(counter);
-			counter+=1;
+			counter += 1;
 			col++;
 		}
 		_putchar(10);
