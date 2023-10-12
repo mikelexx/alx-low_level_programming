@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main- performs fizz-buzz-test.
+ * main - performs fizz-buzz-test.
  * Return: 0 always.
  */
 void main(void)
