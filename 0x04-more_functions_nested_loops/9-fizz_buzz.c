@@ -7,7 +7,7 @@ int main(void)
 {
 	int num = 2;
 
-	printf("%d",1);
+	printf("%d", 1);
 	while (num < 101)
 	{
 		if ((num % 3) == 0 && (num % 5) == 0)
