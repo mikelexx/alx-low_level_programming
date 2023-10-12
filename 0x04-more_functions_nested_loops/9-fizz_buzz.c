@@ -6,6 +6,7 @@
 int main(void)
 {
 	int num = 2;
+
 	printf("%d",1);
 	while (num < 101)
 	{
