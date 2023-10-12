@@ -7,18 +7,13 @@
 int _isdigit(int c)
 {
 	int curr = 0;
-
-	while (curr < 10)
+	while (curr <= 9)
 	{
-		if (c == curr)
+		if (curr == _putchar(c))
 		{
 			return (1);
 		}
 		curr++;
-	}
-	if (c >=48 && c <= 57)
-	{
-		return (1);
 	}
 	return (0);
 }
