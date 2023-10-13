@@ -8,7 +8,6 @@ void print_triangle(int size)
 {
 	int row = 1;
 	int col = 1;
-
 	if (size <= 0)
 	{
 		_putchar(10);
