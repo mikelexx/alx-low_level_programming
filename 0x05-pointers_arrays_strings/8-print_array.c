@@ -7,11 +7,6 @@
  */
 void print_array(int *a, int n)
 {
-	if (n < 0)
-	{
-		return;
-	}
-	printf("%d shiet",n);
 	while (n > 1)
 	{
 		printf("%d, ", *a);
@@ -19,7 +14,10 @@ void print_array(int *a, int n)
 		n--;
 
 	}
+	if (n == 1)
+	{
 	printf("%d", *a);
+	}
 	printf("\n");
 }
 
