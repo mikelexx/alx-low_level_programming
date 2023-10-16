@@ -1,12 +1,12 @@
 #include "main.h"
-#include <stdio.h>
-/** _puts - prints a string followed by new line \
+/**
+ * _puts - prints a string followed by new line \
  * to stdout
- * @:str - pointer to string to be printed
+ * @str: pointer to string to be printed
  */
 void _puts(char *str)
 {
-	while(*str)
+	while (*str)
 	{
 		int letter;
 
@@ -16,5 +16,5 @@ void _puts(char *str)
 	}
 	_putchar('\n');
 }
-		
-	
+
+
