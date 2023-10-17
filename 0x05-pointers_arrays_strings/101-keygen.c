@@ -1,4 +1,5 @@
- #include "main.h"
+#include "main.h"
+#include <stdio.h>
 /**
  * generate_rand - generates random integer
  */
