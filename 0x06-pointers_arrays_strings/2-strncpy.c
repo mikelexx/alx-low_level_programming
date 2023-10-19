@@ -6,14 +6,14 @@
  * @n: extent of copying in bytes
  * Return: pointer to des
  */
-char *_strncpy(char *dest, char*src, int n)
+char *_strncpy(char *dest, char *src, int n)
 {
 	int j;
 
 	j = 0;
 	while (j < n && src[j] != '\0')
 	{
-		dest[j]= src[j];
+		dest[j] = src[j];
 		j++;
 	}
 	while (j < n)

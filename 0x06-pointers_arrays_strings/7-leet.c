@@ -1,58 +1,24 @@
 #include "main.h"
 /**
- * leet - encodes sing to '1'337
- * @s: sing to be encoded
- * Return: pointer to that sing
+ * leet - encode string
+ * @n: input value
+ * Return: pointer n to string
  */
-char *leet(char *s)
+char *leet(char *n)
 {
-	char *start = s;
+	int i, j;
 
-	while (*s)
+	s1[] = "aAeEoOtTlL";
+	s2[] = "4433007711";
+	for (i = 0; n[i] != '\0'; i++)
 	{
-		if(*s == 'a')
+		for (j = 0; j < 10; j++)
 		{
-			*s = '4';
+			if (n[i] == s1[j])
+			{
+				n[i] = s2[j];
+			}
 		}
-		else if (*s == 'A')
-		{
-			*s = '4';
-		}
-		else if (*s == 'e')
-		{
-			*s = '3';
-		}
-		else if (*s == 'E')
-		{
-			*s = '3';
-		}
-		else if (*s == '0')
-		{
-			*s = '0';
-		}
-		else if (*s == 'o')
-		{
-			*s = '0';
-		}
-		else if (*s == 'l')
-		{
-			*s = '1';
-		}
-		else if (*s == 'L')
-		{
-			*s = '1';
-		}
-		else if (*s == 't')
-		{
-			*s = '7';
-		}
-		else if (*s == 'T')
-		{
-			*s = '7';
-		}
-		s++;
 	}
-	return (start);
+	return (n);
 }
-
-
