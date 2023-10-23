@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stddef.h>
 /**
  * _strspn - gets the length of a prefix substring
  * @s: string on which to check prefix substring
@@ -7,9 +8,3 @@
  consist only of bytes from accept
  */
 unsigned int _strspn(char *s, char *accept)
-{
-
-	while (*s)
-	{
-	
-
