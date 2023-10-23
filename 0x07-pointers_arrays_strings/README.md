@@ -1,1 +1,1 @@
-more pointers, strings and arrays
+contains introduction to c programming practice files
