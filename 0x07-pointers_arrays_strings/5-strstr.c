@@ -10,41 +10,32 @@
  */
 char *_strstr(char *haystack, char *needle)
 {
-	char *needlestart = needle;
-	char *start = haystack;
-	int flag = 1;
-	
-	if (*needle == '\0') 
+	char *start = needle;
+	if (!*needle || !*haystack)
 	{
-		return (NULL);
+		return NULL;
 	}
+	
 	while (*haystack)
 	{
-		if (*needle == '\0')
-		{
-			return (start);
-		}
-		if (*haystack == *needle && flag)
-		{
-			start = haystack;
-			needle++;
-			flag = 0;
-		}
-		else if (*haystack == *needle)
+		if ( *haystack == *needle)
 		{
 			needle++;
 		}
 		else
 		{
-			needle = needlestart;
-			flag = 1;
+			needle = start;
 		}
-
 		haystack++;
+		if (!*needle)
+		{
+			return (start);
+		}
 	}
-	if (*needle == '\0')
+	if (!needle)
 	{
 		return (start);
 	}
 	return (NULL);
 }
+
