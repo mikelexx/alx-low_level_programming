@@ -11,9 +11,13 @@
 char *_strstr(char *haystack, char *needle)
 {
 	char *start = needle;
-	if (!*needle || !*haystack)
+	if (!*needle)
 	{
-		return NULL;
+		return haystack;
+	}
+	if (!*haystack)
+	{
+		return (NULL);
 	}
 	
 	while (*haystack)
@@ -32,10 +36,5 @@ char *_strstr(char *haystack, char *needle)
 			return (start);
 		}
 	}
-	if (!needle)
-	{
-		return (start);
-	}
 	return (NULL);
 }
-
