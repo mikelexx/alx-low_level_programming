@@ -1,20 +1,24 @@
 #include "main.h"
 /**
- * is_square - checks if number has squaroot
+ * _is_square - checks if number has squaroot
  * @m: integer to check with
  * @n: number to be checked
+ * Return: squarerooot of n
  */
 int _is_square(int m, int n)
 {
-        if (m * m == n)
-        {
-                return (m);
-        }
-        if (m > (n / 2)) 
-        {
-                return (-1);
-        }
-        return _is_square(m + 1, n); 
+	int check;
+
+	if (m * m == n)
+	{
+		return (m);
+	}
+	if (m > (n / 2))
+	{
+		return (-1);
+	}
+	check =  _is_square(m + 1, n);
+	return (check);
 }
 /**
  * _sqrt_recursion - returns natural squaroot of \
@@ -24,6 +28,8 @@ int _is_square(int m, int n)
  */
 int _sqrt_recursion(int n)
 {
-	return _is_square(0,n);
-	
+	int sq =  _is_square(0, n);
+
+	return (sq);
+}
 }
