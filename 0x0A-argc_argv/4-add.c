@@ -11,6 +11,7 @@
 int main(int argc, char *argv[])
 {
 	int count = 0;
+	int num;
 	int i;
 
 	if (argc == 1)
@@ -25,7 +26,9 @@ int main(int argc, char *argv[])
 			printf("Error\n");
 			return (1);
 		}
-		count += atoi(argv[i]);
+		num = atoi(argv[i]);
+		if (num > 0)
+			count += num;
 	}
 	printf("%d\n", count);
 	return (0);
