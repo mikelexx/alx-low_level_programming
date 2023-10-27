@@ -15,7 +15,6 @@ int main(int argc, char *argv[])
 	if (argc == 1)
 	{
 		printf("%d\n", 0);
-		return (0);
 	}
 	for (i = 1; i < argc; i++)
 	{
@@ -29,6 +28,7 @@ int main(int argc, char *argv[])
 			return (1);
 		}
 	}
-	printf("%d\n", count);
+	if (argc > 1)
+		printf("%d\n", count);
 	return (0);
 }
