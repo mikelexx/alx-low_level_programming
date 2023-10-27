@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <ctype.h>
 /**
  * main - adds positive numbers
  * @argc: count of arguments
@@ -19,17 +20,13 @@ int main(int argc, char *argv[])
 	}
 	for (i = 1; i < argc; i++)
 	{
-		if (*argv[i] >= 48 && *argv[i] <= 57)
-		{
-			count += atoi(argv[i]);
-		}
-		else
+		if (*argv[i] < 48 || *argv[i] > 57)
 		{
 			printf("Error\n");
 			return (1);
 		}
+		count += atoi(argv[i]);
 	}
-	if (argc > 1)
-		printf("%d\n", count);
-	return (0);
+	printf("%d\n",count);
+	return(0);
 }
