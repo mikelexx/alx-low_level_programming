@@ -6,6 +6,6 @@
  */
 int _atoi(char *s)
 {
-	while
- 	retun (0);
+	int c = (int) *s;
+ 	return (c);
 }

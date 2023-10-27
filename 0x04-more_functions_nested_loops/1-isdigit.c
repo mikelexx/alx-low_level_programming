@@ -6,14 +6,6 @@
  */
 int _isdigit(int c)
 {
-	int curr = 0;
-	while (curr <= 9)
-	{
-		if (curr == _putchar(c))
-		{
-			return (1);
-		}
-		curr++;
-	}
-	return (0);
+	
+	return (c);
 }
