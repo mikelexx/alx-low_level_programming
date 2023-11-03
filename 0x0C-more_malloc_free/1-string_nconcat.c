@@ -11,11 +11,11 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	unsigned int i = 0, j = 0, len = 0;
 	char *ptr;
-
-	while (s1[i])
+      
+	while ( s1 && s1[i])
 		i++;
 
-	while (s2[j])
+	while (s2 && s2[j])
 		j++;
 	if (n >= j)
 		n = j;
