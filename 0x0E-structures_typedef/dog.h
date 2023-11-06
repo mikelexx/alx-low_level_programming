@@ -1,5 +1,7 @@
+#ifndef DOG_H
+#define DOG_H
 /**
- * struct dog
+ * struct dog  - animal
  * @name: name of dog
  * @owner: its owners name
  * @age: age
@@ -10,3 +12,4 @@ struct dog
 	float age;
 	char *owner;
 };
+#endif
