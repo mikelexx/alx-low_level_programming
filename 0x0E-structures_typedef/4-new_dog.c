@@ -55,9 +55,18 @@ dog_t *new_dog(char *name, float age, char *owner)
 	len2 = _strlen(owner);
 
 	dname = (char *)malloc(sizeof(char) * len1);
-	downer = (char *)malloc(sizeof(char) * len2);
-	if (dname == NULL || downer == NULL)
+	if (dname == NULL)
+	{
+		free(dt);
 		return (NULL);
+	}
+	downer = (char *)malloc(sizeof(char) * len2);
+	if (downer == NULL)
+	{
+		free(dname);
+		free(dt);
+		return (NULL);
+	}
 	_strcpy(dname, name);
 	_strcpy(downer, owner);
 	dt->name = dname;
