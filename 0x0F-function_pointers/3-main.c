@@ -27,7 +27,7 @@ if (get_op_func(argv[2]) == NULL || argv[2][1] != '\0')
 	printf("Error\n");
 	exit(99);
 }
-if ((op == '/' || op == '%') && b == 0)
+if ((op == '/' && b == 0) || (op == '%' && b == 0))
 {
 	printf("Error\n");
 	exit(100);
