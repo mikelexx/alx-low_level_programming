@@ -1,7 +1,6 @@
 #include"3-calc.h"
 #include<stdio.h>
 #include<stdlib.h>
-#include<string.h>
 /**
 * main - allows user to perform basic math functions
 * @argc: number fo arguments
@@ -23,12 +22,12 @@ op = argv[2][0];
 a = atoi(argv[1]);
 b = atoi(argv[3]);
 
-if (get_op_func(argv[2]) == NULL || strlen(argv[2]) > 1)
+if (get_op_func(argv[2]) == NULL || argv[2][1] != '\0')
 {
 	printf("Error\n");
 	exit(99);
 }
-if (((op == '/' || op == '%') && b == 0) || op == '\0')
+if ((op == '/' || op == '%') && b == 0)
 {
 	printf("Error\n");
 	exit(100);
