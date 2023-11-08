@@ -20,7 +20,7 @@ int main(int argc, char *argv[])
 		printf("ERROR\n");
 		return (98);
 	}
-	if (strlen(argv[2]) > 1)
+	if (get_op_func(argv[2]) == NULL || strlen(argv[2]) > 1)
 	{
 		printf("Error\n");
 		return (99);
