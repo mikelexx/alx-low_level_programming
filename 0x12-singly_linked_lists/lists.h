@@ -3,6 +3,12 @@
 #include <stdio.h>
 #include <stddef.h>
 #include <stdlib.h>
+/**
+ * struct list_t - linked list node
+ * @len: a random integer
+ * @str: pinter to string
+ * @next: pointer to next node
+ */
 typedef struct list_t
 {
 	char *str;
