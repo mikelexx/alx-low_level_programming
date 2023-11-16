@@ -8,11 +8,14 @@ size_t print_list(const list_t *h)
 {
 	size_t counter = 0;
 	const list_t *tmp = h;
+	int len = 0;
 
 	while (tmp)
 	{
 		if (tmp->str)
 		{
+			while (*(tmp->str + len))
+				len++;
 			printf("[%d] ", tmp->len);
 			printf("%s", tmp->str);
 		}
