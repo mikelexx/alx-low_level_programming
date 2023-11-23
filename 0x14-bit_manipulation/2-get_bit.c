@@ -7,36 +7,11 @@
  */
 int get_bit(unsigned long int n, unsigned int index)
 {
-	unsigned long int curr = 1;
-	unsigned int count = 0;
+	n = n >> index;
+	if ((n % 2) == 0)
+		return (0);
+	else
+		return (1);
 
-	while (curr <= n)
-	{
-		curr = curr << 1;
-		count++;
-	}
-	curr = curr >> 1;
-	--count;
-	while (curr > 0)
-	{
-		if (n >= curr)
-		{
-			if (index == count)
-			{
-				return (1);
-			}
-			n = n - curr;
-		}
-		else
-		{
-			if (index == count)
-				return (0);
-		}
-		curr = curr >> 1;
-		count--;
-	}
-	return (-1);
 }
-
-
 
