@@ -9,7 +9,7 @@ void free_dlistint(dlistint_t *head)
 
 	if (head == NULL)
 		return;
-	while(curr)
+	while (curr)
 	{
 		tmp = curr->next;
 		free(curr);
