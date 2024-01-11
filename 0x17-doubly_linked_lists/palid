@@ -1,0 +1,9 @@
+#!/usr/bin/python3
+last = "0"
+for i in range(1000):
+	for j in range(1000):
+		tmp = str( i * j)
+		if tmp == tmp[::-1]:
+			if tmp > last:
+				last = tmp
+print(last)
