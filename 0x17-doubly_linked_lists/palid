@@ -1,9 +1,13 @@
 #!/usr/bin/python3
 last = "0"
-for i in range(1000):
-	for j in range(1000):
-		tmp = str( i * j)
-		if tmp == tmp[::-1]:
-			if tmp > last:
-				last = tmp
-print(last)
+n = 0
+m = 0
+for i in range(100,1000):
+    for j in range(100, 999):
+        tmp = str( i * j)
+        if tmp == tmp[::-1]:
+            if tmp > last:
+                last = tmp
+                n = i
+                m = j
+print(last, n, m)
