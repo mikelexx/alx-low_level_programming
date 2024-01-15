@@ -4,7 +4,7 @@
  * _putchar - prints passed character
  * @c: integer rep of char to be printed
  */
-void _putchar(int c)
+int _putchar(char c)
 {
 	putchar(c);
 }
