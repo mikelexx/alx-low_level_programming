@@ -13,7 +13,6 @@ int main(void)
     hash_table_t *ht;
 
     ht = hash_table_create(1024);
-    hash_table_set(ht, "betty", "cool");
     hash_table_set(ht, "hetairas", "mentioner");
     hash_table_set(ht, "heliotropes", "neurospora");
     hash_table_set(ht, "depravement", "serafins");
@@ -21,5 +20,6 @@ int main(void)
     hash_table_set(ht, "joyful", "synaphea");
     hash_table_set(ht, "rediscribed", "urites");
     hash_table_set(ht, "drama", "vivency");
-    return (EXIT_SUCCESS);
+    hash_table_set(ht, "betty", "cool");
+   return (EXIT_SUCCESS);
 }

@@ -10,14 +10,25 @@
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
 	unsigned long int index;
-	const char *val = strdup(value);
 	hash_node_t *node = malloc(sizeof(hash_node_t));
 
-	if (!ht || !ht->array || strlen(key) == 0 || val == NULL || !node)
+	if (!ht || strlen(key) == 0 || !node)
 		return (0);
-	node->key = (char *)key;
-	node->value = (char *)val;
-	index = hash_djb2((const unsigned char *)key) % (ht->size);
+	node->key = strdup(key);
+	if (node->key  == NULL)
+	{
+		free(node);
+		return (0);
+	}
+	node->value = strdup(value);
+
+	if (node->value == NULL)
+	{
+		free(node->key);
+		free(node);
+		return (0);
+	}
+	index = hash_djb2((const unsigned char *)node->key) % (ht->size);
 	if (ht->array[index])
 	{
 		node->next = ht->array[index];
