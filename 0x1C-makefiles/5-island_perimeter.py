@@ -19,6 +19,8 @@ def island_perimeter(grid):
             grid: grid is a list of list of integers:
     Returns: returns the perimeter of the island described in grid:
     """
+    if not grid or grid == [[]]:
+        return 0
     res = 0
     rows = len(grid)
     cols = len(grid[0])
