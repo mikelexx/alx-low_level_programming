@@ -78,3 +78,4 @@ The island doesn’t have “lakes” (water inside that isn’t \
             cell = grid[row][col]
             if cell:
                 return 0 + travel(row, col, grid, vis, rows, cols)
+    return 0
