@@ -1,4 +1,4 @@
-#!usr/bin/python3
+#!/usr/bin/python3
 """
 THis module contains an interview question on travelling 2d matrices
 """
@@ -7,13 +7,15 @@ THis module contains an interview question on travelling 2d matrices
 def travel(row, col, grid, vis, rows, cols):
 
     """
-    THis functions asserts that the adjacent cells are not visited
-    and not out of list then explores them
-    Args:
-        row: y position of cell on the grid
-        col: x position of cell on the grid
-    Returns: number of valid boundaries that can be obtained including and
-    from that cell position
+        THis functions asserts that the adjacent cells
+        are not visited
+        and not out of list then explores them
+        Args:
+            row: y position of cell on the grid
+            col: x position of cell on the grid
+        Returns: number of valid boundaries that can\
+                be obtained including and
+        from that cell position
     """
     res = 0
     left = True
@@ -56,17 +58,17 @@ def travel(row, col, grid, vis, rows, cols):
 
 def island_perimeter(grid):
     """
-0 represents a water zone
-1 represents a land zone
-One cell is a square with side length 1
-Grid cells are connected horizontally/vertically (not diagonally).
-Grid is rectangular, width and height don’t exceed 100
-Grid is completely surrounded by water, and there is one island \
-        (or nothing).
-The island doesn’t have “lakes” (water inside that isn’t \
-        connected to the water around the island).
-    Args:
-        grid: grid is a list of list of integers:
+    0 represents a water zone
+    1 represents a land zone
+    One cell is a square with side length 1
+    Grid cells are connected horizontally/vertically (not diagonally).
+    Grid is rectangular, width and height don’t exceed 100
+    Grid is completely surrounded by water, and there is one island \
+            (or nothing).
+    The island doesn’t have “lakes” (water inside that isn’t \
+            connected to the water around the island).
+        Args:
+            grid: grid is a list of list of integers:
     Returns: returns the perimeter of the island described in grid:
     """
     rows = len(grid)
