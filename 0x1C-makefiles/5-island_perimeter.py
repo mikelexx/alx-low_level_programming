@@ -1,4 +1,4 @@
-#!usr/bin/env python3
+#!usr/bin/python3
 """
 THis module contains an interview question on travelling 2d matrices
 """
