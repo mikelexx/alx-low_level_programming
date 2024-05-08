@@ -11,6 +11,8 @@ skiplist_t *linear_skip(skiplist_t *list, int value)
 {
 	skiplist_t *curr = list, *prev;
 
+	if (list == NULL)
+		return (NULL);
 	while (curr)
 	{
 		prev = curr;
