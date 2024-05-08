@@ -1,4 +1,12 @@
 #include "search_algos.h"
+/**
+ * advanced_binary_helper - helps do binary search
+ * @array: pointer to the fist element of array to do search in.
+ * @left: lower index bound.
+ * @right: upper index bound.
+ * @value: value to earch in array.
+ * Return: index of first occurence of value else -1.
+ */
 int advanced_binary_helper(int *array, size_t left, size_t right, int value)
 {
 	size_t i, middle = (left + right) / 2;
@@ -20,7 +28,7 @@ int advanced_binary_helper(int *array, size_t left, size_t right, int value)
 		right  = middle - 1;
 	if (value > array[middle])
 		left = middle + 1;
-	return advanced_binary_helper(array, left, right, value);
+	return (advanced_binary_helper(array, left, right, value));
 }
 /**
  * advanced_binary - searches for a value in a sorted array of integers.
@@ -33,5 +41,8 @@ int advanced_binary_helper(int *array, size_t left, size_t right, int value)
 int advanced_binary(int *array, size_t size, int value)
 {
 	size_t left = 0, right = size - 1;
+
+	if (array == NULL || size == 0)
+		return (-1);
 	return (advanced_binary_helper(array, left, right, value));
 }
